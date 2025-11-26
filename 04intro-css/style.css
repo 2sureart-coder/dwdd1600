@@ -1,0 +1,146 @@
+/* -------------------------
+   Global Styles
+   Sets font, background, and main colors
+------------------------- */
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #F2EAD0; /* light beige */
+    color: #26250F; /* dark brown */
+    margin: 0;
+}
+
+/* -------------------------
+   Header Styling
+------------------------- */
+header {
+    background-color: #C6A556; /* gold */
+    padding: 1rem 10px;
+}
+
+header span {
+    color: #26250F;
+    font-size: 1.6rem;  /* large font */
+    font-weight: 700;   /* bold */
+}
+
+/* -------------------------
+   Navigation Styling
+------------------------- */
+nav {
+    background-color: #403023; /* dark brown */
+}
+
+nav ul {
+    list-style-type: none; /* remove bullets */
+    margin: 0;
+    padding: 0 10px;
+    display: flex; /* horizontal menu */
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none; /* remove underline */
+    color: #F2EAD0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    height: 48px; /* minimum clickable height */
+}
+
+nav li.active a {
+    background-color: #8C3323; /* wayfinding color */
+}
+
+nav a:hover {
+    background-color: #C6A556; /* hover background */
+    color: #26250F; /* hover text */
+}
+
+/* -------------------------
+   Main Content
+------------------------- */
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #8C3323;
+    font-size: 2rem; /* large heading */
+    font-weight: 700;
+}
+
+main h2 {
+    color: #403023;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+main p {
+    margin: 0 0 1rem 0;
+    font-weight: 300;
+}
+
+/* -------------------------
+   List Styling
+------------------------- */
+main ul {
+    list-style-type: square; /* square bullets */
+    padding: .5rem 30px;
+    margin-bottom: 1rem;
+}
+
+main ol {
+    padding: .5rem 30px;
+    background-color: #E0D7B5;
+    border-radius: 8px;
+}
+
+main dl dt {
+    color: #8C3323;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    margin-left: 20px;
+    color: #403023;
+    font-size: .95rem;
+}
+
+/* -------------------------
+   Borders Example
+------------------------- */
+.box-example {
+    border: 3px solid #8C3323;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------
+   Links / Pseudo-classes
+------------------------- */
+main a {
+    color: #8C3323;
+}
+
+main a:hover {
+    color: #403023;
+}
+
+/* -------------------------
+   Footer Styling
+------------------------- */
+footer {
+    background-color: #C6A556;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: .9rem;
+    color: #26250F;
+    letter-spacing: 2px;
+}
