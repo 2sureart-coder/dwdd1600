@@ -1,0 +1,306 @@
+/* -------------------------
+   Global Styles
+------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 16px;
+    background-color: #F2EAD0; /* light beige */
+    color: #26250F; /* dark brown */
+}
+
+/* -------------------------
+   Header Styling
+------------------------- */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2vw;
+    max-width: 64rem;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+}
+
+header .header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+header .header-text span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #8b5022;
+}
+
+header .header-text small {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #403023;
+}
+
+/* -------------------------
+   Navigation Styling
+------------------------- */
+nav {
+    background: linear-gradient(to right, #403023, #8C3323);
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F2EAD0;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+nav .active a {
+    background-color: #8C3323;
+}
+
+nav a:hover {
+    background-color: #C6A556;
+    color: #26250F;
+}
+
+/* Mobile Navigation */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        border-bottom: solid 1px #eee;
+        padding: 0.8rem;
+    }
+
+    nav .active a {
+        background-color: #8C501B;
+    }
+}
+
+/* -------------------------
+   Main Content
+------------------------- */
+main {
+    padding: 1rem 2vw;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+main h1 {
+    color: #8b5022;
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0.8rem 0;
+    font-weight: 700;
+}
+
+main h2 {
+    color: #403023;
+    margin-bottom: 0.3rem;
+}
+
+main p {
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+/* -------------------------
+   Hero Image
+------------------------- */
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+/* -------------------------
+   Gallery
+------------------------- */
+.gallery, .angeloGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 1rem;
+}
+
+.gallery figure, .angeloGallery section {
+    width: 300px;
+    text-align: center;
+}
+
+.gallery img, .angeloGallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    transition: box-shadow 0.3s;
+}
+
+.gallery img:hover, .angeloGallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.gallery figcaption, .angeloGallery span {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #403023;
+    font-weight: 700;
+}
+
+/* -------------------------
+   Forms
+------------------------- */
+.myForm fieldset {
+    border: 1px solid #403023;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+.myForm legend {
+    color: #403023;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.myForm label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.myForm [type=text],
+.myForm [type=email],
+.myForm [type=tel],
+.myForm select,
+.myForm textarea {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+    border: 1px solid #888;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #8b5022;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.myForm [type=submit]:hover {
+    background-color: #403023;
+}
+
+/* -------------------------
+   Table Styling
+------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+thead {
+    background-color: #8b5022;
+    color: #F2EAD0;
+}
+
+thead th {
+    padding: 0.8rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #E3D6B8;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #F7F1DE;
+}
+
+tbody tr:hover {
+    background-color: #C6A556;
+    color: #26250F;
+}
+
+tbody td {
+    padding: 0.8rem;
+}
+
+/* -------------------------
+   Video & Map Wrappers
+------------------------- */
+.video-wrapper,
+.map-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.video-wrapper iframe,
+.map-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* -------------------------
+   Footer Styling
+------------------------- */
+footer {
+    border-top: solid #895772 1px;
+    text-align: center;
+    color: #8b5022;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #8b5022;
+}

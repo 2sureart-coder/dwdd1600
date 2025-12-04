@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Emma Teuscher">
+    <meta name="description" content="Request a custom playlist from Music Monday.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Monday: Request a Playlist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+<header>
+           <img src="images/icon.png" alt="Music Monday Logo" class="logo">
+    <div class="header-text">
+        <span>Music Monday</span> — Create an Intentional Listening Experience
+        </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="artists.html">New Artists</a></li>
+        <li class="active"><a href="playlist.html">Request a Playlist</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="map.html">Map</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Request a Custom Playlist</h1>
+    <p>Fill out the form below to get a personalized playlist based on your music taste.</p>
+
+    <form method="get" class="myForm" action="thanks.html">
+
+        <!-- Personal Info -->
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label>First Name* 
+                <input type="text" name="fname" required>
+            </label>
+
+            <label>Last Name* 
+                <input type="text" name="lname" required>
+            </label>
+
+            <label>Email* 
+                <input type="email" name="email" required>
+            </label>
+
+            <label>Optional Phone Number (for weekly playlists) 
+                <input type="tel" name="phone" placeholder="987-555-1234">
+            </label>
+        </fieldset>
+
+        <!-- Music Preferences -->
+        <fieldset>
+            <legend>Music Preferences</legend>
+
+            <label>Favorite Genre* 
+                <select name="genre" required>
+                    <option value="">Select Genre</option>
+                    <option value="indie">Indie</option>
+                    <option value="pop">Pop</option>
+                    <option value="rock">Rock</option>
+                    <option value="folk">Folk</option>
+                    <option value="electronic">Electronic</option>
+                </select>
+            </label>
+
+            <label>Preferred Platform*</label>
+            <label>
+                <input type="radio" name="platform" value="spotify" required> Spotify
+            </label>
+            <label>
+                <input type="radio" name="platform" value="apple"> Apple Music
+            </label>
+            <label>
+                <input type="radio" name="platform" value="youtube"> YouTube Music
+            </label>
+        </fieldset>
+
+        <!-- Additional Requests -->
+        <fieldset>
+            <legend>Additional Requests</legend>
+
+            <label>Specific Artists or Songs
+                <textarea name="requests" placeholder="Optional"></textarea>
+            </label>
+
+            <label>Playlist Mood</label>
+            <label>
+                <input type="checkbox" name="mood" value="chill"> Chill
+            </label>
+            <label>
+                <input type="checkbox" name="mood" value="energetic"> Energetic
+            </label>
+            <label>
+                <input type="checkbox" name="mood" value="focus"> Focus
+            </label>
+            <label>
+                <input type="checkbox" name="mood" value="happy"> Happy
+            </label>
+
+            <label>Additional Notes
+                <textarea name="notes" placeholder="Anything else you'd like us to consider?"></textarea>
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Send Playlist Request">
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 • Music Monday • Indie Music Community</p>
+</footer>
+</body>
+</html>
